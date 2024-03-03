@@ -1,4 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
+    color: #124076;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    color: #124076;
+    font-size: 2rem;
+}
+header i {
+    font-size: 3.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.agregarTareas {
+    width: 80vw;
+    height: 50vh;
+    box-shadow: 0 0 15px 0 #7F9F80;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 1.5rem;
+}
+
+.tarea input {
+    width: 60%;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+.fechas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.fechaInicio {
+    display: flex;
+    flex-direction: column;
+    /* column-gap: 20px; */
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.fechaFin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.fechas input {
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.resp {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.resp input{
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-left: 10px;
+    width: 40%;
+}
+
+.nivel {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 1.2rem;
+    gap: 50px;
+}
+
+.radio {
+    /* font-size: 50rem; */
+    width: 15px;
+    height: 15px;
+}
+
+.agregarTareas button{
+    margin-top: 30px;
+    align-self: center;
+    width: 30%;
+    height: 40px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.btnAgregar:hover {
+    background-color: #F9E897;
+}
+
+.tareaPendiente {
+    margin-top: 30px;
+    width: 80vw;
+    height: 50vh;
+    box-shadow: 0 0 15px 0 #7F9F80;
+    border-radius: 20px;
+}
+
+.tareaPendiente h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.checkBox {
+    /* display: flex;
+    flex-direction: row; */
+    gap: 30px;
+    margin-left: 15px;
+    font-size: 1.2rem;
+    height: 80%;
+    /* justify-content: space-around;
+    align-items: start; */
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+}
+
+.terminarTareas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.terminar, .noTerminado{
+    font-size: 1.5rem;
+}
+
+.terminar:hover {
+    color: rgb(1, 103, 1);
+}
+
+.noTerminado:hover {
+    color: red;
 }

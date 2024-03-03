@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To Do List</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/main.js" defer></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -14,44 +14,53 @@
         <i class='bx bx-check'></i>
     </header>
     <main>
-        <div class="tarea">
-            <label for="ingresarTarea">Tarea</label>
-            <input name="ingresarTarea" type="text">
-        </div>
-        <div class="fechas">
-            <div class="fechaInicio">
-                <label for="fechaInicio">Fecha de inicio</label>
-                <input type="date" name="fechainicio" id="">
+        <div class="agregarTareas">
+            <div class="tarea">
+                <label for="ingresarTarea">Tarea</label>
+                <input name="ingresarTarea" type="text" placeholder="Agregar Tarea" id="ingresarTarea">
             </div>
-            <div class="fechaFin">
-                <label for="fechaInicio">Fecha fin</label>
-                <input type="date" name="fechainicio" id="">
+            <div class="fechas">
+                <div class="fechaInicio">
+                    <label for="fechaInicio">Fecha de inicio</label>
+                    <input type="date" name="fechaInicio" id="fechaInicio">
+                </div>
+                <div class="fechaFin">
+                    <label for="fechaFin">Fecha fin</label>
+                    <input type="date" name="fechaFin" id="fechaFin">
+                </div>
             </div>
-        </div>
-        <div class="resp">
-            <label for="resp">Resp</label>
-            <input name="resp" type="text">
-        </div>
-        <div class="nivel">
-            <div class="urgente">
-                <input type="radio" name="urgente" id="">
-                <label for="nivel">Urgente</label>
+            <div class="resp">
+                <label for="responsable">Responsable:</label>
+                <input name="resp" type="text" placeholder="Agregar responsable" id="responsable">
             </div>
-            <div class="normal">
-                <input type="radio" name="nivel" id="">
-                <label for="nivel">Normal</label>
+            <div class="nivel">
+                <p>Nivel: </p>
+                <div class="urgente">
+                    <input class="radio" type="radio" name="urgente" id="urgente">
+                    <label for="urgente">Urgente</label>
+                </div>
+                <div class="normal">
+                    <input class="radio" type="radio" name="normal" id="normal">
+                    <label for="normal">Normal</label>
+                </div>
             </div>
+            <button class="btnAgregar" type="agregar">Agregar</button>
         </div>
-        <button type="agregar">Agregar</button>
+            
         <div class="tareaPendiente">
             <h2>Tareas Pendientes</h2>
-            <p>Tarea 1</p>
-            <div class="terminarTareas">
-                <!-- <input type="radio" name="Terminar" id=""> -->
-                <i class='bx bx-check-circle Terminar'></i>
-                <!-- <input type="radio" name="noTerminado" id=""> -->
-                <i class='bx bx-x-circle noTerminado'></i>
+            
+            <div class="checkBox">
+                <p>Tarea 1</p>
+                <div class="terminarTareas">
+                    <!-- <input type="radio" name="Terminar" id=""> -->
+                    <i class='bx bx-check-circle terminar'></i>
+                    <!-- <input type="radio" name="noTerminado" id=""> -->
+                    <i class='bx bx-x-circle noTerminado'></i>
+                </div>
             </div>
+            
+            
         </div>
         <div class="cumplidasNoCumplidas">
             <div class="tareasCumplidas">

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <h1>To Do List</h1>
+        <i class='bx bx-check'></i>
+    </header>
+    <main>
+        <div class="tarea">
+            <label for="ingresarTarea">Tarea</label>
+            <input name="ingresarTarea" type="text">
+        </div>
+        <div class="fechas">
+            <div class="fechaInicio">
+                <label for="fechaInicio">Fecha de inicio</label>
+                <input type="date" name="fechainicio" id="">
+            </div>
+            <div class="fechaFin">
+                <label for="fechaInicio">Fecha fin</label>
+                <input type="date" name="fechainicio" id="">
+            </div>
+        </div>
+        <div class="resp">
+            <label for="resp">Resp</label>
+            <input name="resp" type="text">
+        </div>
+        <div class="nivel">
+            <div class="urgente">
+                <input type="radio" name="urgente" id="">
+                <label for="nivel">Urgente</label>
+            </div>
+            <div class="normal">
+                <input type="radio" name="nivel" id="">
+                <label for="nivel">Normal</label>
+            </div>
+        </div>
+        <button type="agregar">Agregar</button>
+        <div class="tareaPendiente">
+            <h2>Tareas Pendientes</h2>
+            <p>Tarea 1</p>
+            <div class="terminarTareas">
+                <!-- <input type="radio" name="Terminar" id=""> -->
+                <i class='bx bx-check-circle Terminar'></i>
+                <!-- <input type="radio" name="noTerminado" id=""> -->
+                <i class='bx bx-x-circle noTerminado'></i>
+            </div>
+        </div>
+        <div class="cumplidasNoCumplidas">
+            <div class="tareasCumplidas">
+
+            </div>
+            <div class="tareasFallidas">
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>

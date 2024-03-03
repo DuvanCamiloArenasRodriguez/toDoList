@@ -18,6 +18,31 @@ const obtenerDatos = async () => {
     }
 }
 
-export {
-    obtenerDatos
+const unoSolo = async (idTarea) => {
+    const datosTarea = await fetch(`${URL}/tareas/${idTarea}`)
+    const datosFormato = await datosTarea.json()
+    return datosFormato
 }
+
+const cambiarTarea = (id, tarea) => {
+    fetch(`${URL}/tareas/${id}`, {
+        method: "PUT",
+        headers: cabecera,
+        body: JSON.stringify(tarea),
+    }).catch((error) => {
+        console.error("Error:", error)
+    })
+}
+
+function guardarDatos(datosFormulario) {
+    fetch(`${URL}/tareas`, {
+        method: "POST",
+        headers: cabecera,
+        body: JSON.stringify(datosFormulario)
+    }).catch(error => console.log(error))
+}
+
+export {
+    obtenerDatos, guardarDatos, unoSolo, cambiarTarea
+}
+

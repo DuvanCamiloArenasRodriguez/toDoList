@@ -96,6 +96,8 @@ main {
     width: 40%;
 }
 
+
+
 .nivel {
     display: flex;
     flex-direction: row;
@@ -120,7 +122,10 @@ main {
     height: 40px;
     font-size: 1rem;
     border-radius: 5px;
+    margin-left: 15px;
 }
+
+
 
 .btnAgregar:hover {
     background-color: #F9E897;
@@ -129,9 +134,10 @@ main {
 .tareaPendiente {
     margin-top: 30px;
     width: 80vw;
-    height: 50vh;
+    /* height: 50vh; */
     box-shadow: 0 0 15px 0 #7F9F80;
     border-radius: 20px;
+    
 }
 
 .tareaPendiente h2 {
@@ -145,12 +151,12 @@ main {
     gap: 30px;
     margin-left: 15px;
     font-size: 1.2rem;
-    height: 80%;
+    /* height: 80%; */
     /* justify-content: space-around;
     align-items: start; */
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto;
+    /* display: grid; */
+    /* grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto; */
 }
 
 .terminarTareas {
@@ -169,4 +175,12 @@ main {
 
 .noTerminado:hover {
     color: red;
+}
+
+.fechaInicio, .fechaFin {
+    font-size: 1rem;
+}
+
+.ocultar {
+    display: none;
 }

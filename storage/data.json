@@ -1,5 +1,40 @@
 {
-    "tareas": {
-        "nombre": "asasdad"
+  "tareas": [
+    {
+      "id": "b7ee",
+      "ingresarTarea": "Semillero",
+      "fechaInicio": "2024-03-04",
+      "fechaFin": "2024-03-07",
+      "resp": "Duvan",
+      "prioridad": "urgente",
+      "estado": "pendiente"
+    },
+    {
+      "id": "5dd8",
+      "ingresarTarea": "taller",
+      "fechaInicio": "2024-03-18",
+      "fechaFin": "2024-03-19",
+      "resp": "",
+      "prioridad": "NoUrgente",
+      "estado": "realizada"
+    },
+    {
+      "id": "4925",
+      "ingresarTarea": "caminar",
+      "fechaInicio": "2024-03-01",
+      "fechaFin": "2024-03-05",
+      "resp": "",
+      "prioridad": "urgente",
+      "estado": "noRealizada"
+    },
+    {
+      "id": "5d4e",
+      "ingresarTarea": "Hacer comida",
+      "fechaInicio": "2024-03-19",
+      "fechaFin": "2024-03-21",
+      "resp": "",
+      "prioridad": "NoUrgente",
+      "estado": "realizada"
     }
+  ]
 }

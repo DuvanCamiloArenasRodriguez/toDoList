@@ -1,29 +1,17 @@
-const tareasPorHacer = [
-    {
-        id: '',
-        nombreTarea: '',
-        fechaInicio: '',
-        fechaFin: '',
-        responsable: '',
-        nivel: '',
-        estado: ''
-    }
-]
+import {obtenerDatos} from "../Api/api.js"
 
-function crearTarea(id, nombreTarea, fechaInicio, fechaFin, responsable, nivel, estado) {
-    this.id = () => {
-        // Función para generar id
-    }
-    this.nombreTarea = nombreTarea;
-    this.fechaInicio = fechaInicio;
-    this.fechaFin = fechaFin;
-    this.responsable = responsable;
-    this.nivel = nivel;
-    this.estado = estado;
+document.addEventListener("DOMContentLoaded", async()=>{
+    const datos = await obtenerDatos()
+    console.log(datos);
+})
+
+const form = document.querySelector("#formulario")
+form.addEventListener("submit", agregarDatos)
+
+function agregarDatos(e) {
+    e.preventDefault()
+    const datosFormulario = e.target
+    const datos = new FormData(datosFormulario)
+    const transformar = Object.fromEntries(datos)
+    console.log(transformar);
 }
-
-// Definicion de variables
-
-const nombreTarea = document.querySelector("#ingresarTarea").value
-console.log(nombreTarea);
-

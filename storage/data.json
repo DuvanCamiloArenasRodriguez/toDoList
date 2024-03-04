@@ -7,7 +7,7 @@
       "fechaFin": "2024-03-07",
       "resp": "Duvan",
       "prioridad": "urgente",
-      "estado": "pendiente"
+      "estado": "noRealizada"
     },
     {
       "id": "5dd8",
@@ -34,6 +34,15 @@
       "fechaFin": "2024-03-21",
       "resp": "",
       "prioridad": "NoUrgente",
+      "estado": "realizada"
+    },
+    {
+      "id": "64d6",
+      "ingresarTarea": "mgvmhv",
+      "fechaInicio": "2024-03-05",
+      "fechaFin": "2024-03-07",
+      "resp": "Duvan",
+      "prioridad": "urgente",
       "estado": "realizada"
     }
   ]

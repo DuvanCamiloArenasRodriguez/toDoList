@@ -39,7 +39,7 @@ function mostrarTareas(padre, estado, datos) {
         <div class="col ">
         <div class="card" style="width: 15rem;">
                             <div class="card-body">
-                              <h6 class="card-subtitle mb-2 text-body-secondary">"${tarea.prioridad}</h6>
+                              <h6 class="card-subtitle mb-2 text-body-secondary">${tarea.prioridad}</h6>
                               <div class="fechas">
                                 <div class="fechaInicio">
                                     <p>Inicia</p>

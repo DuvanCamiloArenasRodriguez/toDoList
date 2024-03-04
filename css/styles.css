@@ -30,12 +30,14 @@ main {
 
 .agregarTareas {
     width: 80vw;
-    height: 50vh;
+    /* height: 60vh; */
     box-shadow: 0 0 15px 0 #7F9F80;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
 }
+
+
 
 .tarea {
     display: flex;
@@ -117,6 +119,7 @@ main {
 
 .agregarTareas button{
     margin-top: 30px;
+    margin-bottom: 30px;
     align-self: center;
     width: 30%;
     height: 40px;
@@ -183,4 +186,58 @@ main {
 
 .ocultar {
     display: none;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.cumplidasNoCumplidas {
+    width: 80vw;
+    height: 50vh;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px 0 #7F9F80;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+
+.tareasCumplidas, .tareasFallidas {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow-y: scroll;
+    box-shadow: 0 0 15px 0 #7F9F80;
+}
+
+@media (max-width: 768px) {
+    .fechas{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fechaFin {
+        margin-top: 10px;
+    }
+
+   .checkBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .cumplidasNoCumplidas {
+    display: flex;
+    flex-direction: column;
+   }
+
+   .card {
+    display: flex;
+    flex-direction: column;
+   }
 }
